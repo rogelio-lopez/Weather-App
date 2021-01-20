@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --letter-color: white;
+    --button-color: orange;
+    color: rgb(245, 245, 245);
+}
+.background{
+    background: url('https://www.ksnt.com/wp-content/uploads/sites/86/2015/12/sunshine_36366417_ver1.0.jpg?w=2560&h=1440&crop=1');
+    background-size: cover;
+    filter: blur(5px);
+    height: 100vh;
+    width: 100vw;
+}
+.app{
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    display: flex;
+    border-radius: 2px;
+    background:rgba(0, 37, 78, 0.685);
+}
+
+/* Left side */
+.left{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.weather{
+    display: flex;
+    align-items: flex-end;
+    margin: 8%;
+}
+#temp{
+    font-size: 80px;
+    font-weight: 300;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#cityName{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+.cityInfo{
+    display: flex;
+    justify-content: flex-start;
+}
+.icon{
+    padding: 3px;
+}
+
+/* Rigt side */
+.right{
+    width: 300px;
+    height: 100%;
+    background:rgba(0, 60, 129, 0.562);
+}
+.search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: solid 2px lightgray;
+    width: 180px;
+    padding-left: 10px;
+    margin-right: 35px;
+}
+.searchIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: var(--button-color);
+}
+.searchIcon:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+.weatherInfo{
+    margin-top: 40px;
+}
+.infoList{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 120px;
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(194, 194, 194);
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/vivid-icons@1.0.10" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="app">
+            <div class="left">
+                <div class="weather">
+                    <div class="temperature">
+                        <h1 id="temp"></h1>
+                    </div>
+                    <div class="city">
+                        <h2 id="cityName">Search a city</h2>
+                        <div class="cityInfo">
+                            <p id="forecast">To see the weather</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input class="input" type="text" placeholder="Enter a city">
+                    <div class="searchIcon" onclick="getCityWeather()">
+                        <i data-vi="search"></i>
+                    </div>
+                </div>
+                <div class="weatherInfo">
+                    <div class="infoList">
+                        <p>Max Temperature: <span id="maxTemp"></span>°</p>
+                        <p>Min Temperature: <span id="minTemp"></span>°</p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Wind Speed: <span id="wind"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
