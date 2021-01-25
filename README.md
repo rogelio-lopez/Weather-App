@@ -1,2 +1,2 @@
 # Weather-App
-Weather app using VanillaJS andweather API ( https://openweathermap.org/)
+Weather app using VanillaJS and weather API ( https://openweathermap.org/)
